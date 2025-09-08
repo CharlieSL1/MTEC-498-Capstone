@@ -131,5 +131,7 @@ cshi@berklee.edu
 
 ## Credits
 *“Li SHi - Concept Develop and Design.”*
+
 *“Xinyu Li - Sketch & Design”*
+
 *”Special Thanks - Akito van Troyer“*

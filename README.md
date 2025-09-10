@@ -1,8 +1,8 @@
 # MTEC-498-Capstone
 # PanGu — Spatial Audio, Live Phase Controller & Composition Assistant
-- [PanGu_V1](/Users/lishi/Documents/GitHub/MTEC-498-Capstone/Homework/ProjectProposal/PanGu_V1.jpg)
-- [PanGu_Flow_Chart](/Users/lishi/Documents/GitHub/MTEC-498-Capstone/Homework/ProjectProposal/PanGu.png)
-- [PanGu_ppt](/Users/lishi/Documents/GitHub/MTEC-498-Capstone/Homework/ProjectProposal/PanGu.pdf)
+- [PanGu_V1](PanGu_V1.jpg)
+- [PanGu_Flow_Chart](PanGu.png)
+- [PanGu_ppt](PanGu.pdf)
 
 > **Elevator Pitch**  
 > A next-generation **spatial audio performance platform**: a wearable, arm-mounted **Circle MIDI controller** that lets you **select a position in 3D space** and then **instantly play/place sounds there**—turning spatial audio into an expressive **instrument** for composition and live performance.

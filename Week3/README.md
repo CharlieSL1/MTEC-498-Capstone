@@ -24,7 +24,7 @@ Below is the V2 idea graph.
 
 ![V2 idea](V2.png)
 
-# Weekly Progress Toward Milestones (aiming for 6/6)
+# Weekly Progress Toward Milestones 
 
 ### Decisions & Scope
 
@@ -37,8 +37,6 @@ VIVE Tracker → SteamVR/OpenVR → OSC → Max/MSP or Max for Live → spatial/
 
 Lumatone-like grid for harmony/clip triggers/mode switches.
 
-4) Reflection / Documentation (aiming for 2/2)
-
-# Short reflection
+# Reflection / Documentation 
 
 Removing the glove reduces integration overhead and lets me focus on audible, playable mappings. Speed→granular density creates a clear textural change, but jitter requires EMA smoothing and a dead-zone to avoid chattering. Orientation→distance/reverb feels musical when the reverb ratio moves slower than pan—this keeps localization stable while space “breathes.” The key challenge is maintaining predictability so gestures feel like technique, not randomness. Next week’s 60-second demo will validate: (1) clarity of each mapping, (2) intuitiveness of gestures, (3) robustness when moving around the stage.

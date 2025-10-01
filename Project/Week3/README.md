@@ -22,7 +22,7 @@ ___
 
 Below is the V2 idea graph.
 
-![V2 idea](V2.png)
+![V2 idea](../assets/images/V2.png)
 
 # Weekly Progress Toward Milestones 
 

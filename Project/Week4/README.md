@@ -26,5 +26,5 @@
 3. Re-design the interactive way with the PanGu project.
 
 4. Design SystemFlow
-        ![Picture](../Week4/SystemFlow.png)
+        ![Picture](../assets/images/SystemFlow.png)
         

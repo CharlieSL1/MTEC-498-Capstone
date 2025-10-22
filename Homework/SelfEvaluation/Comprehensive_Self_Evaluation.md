@@ -6,7 +6,7 @@
 ## 1. Course Journey Overview (1 min)
 
 ### Project Introduction and Evolution
-**Initial Vision**: A next-generation spatial audio performance platform featuring a wearable, arm-mounted Circle MIDI controller for intuitive 3D sound positioning and performance.
+**Initial Vision**:  I’m exploring using hand gestures and a depth camera to shape a space that the composer can freely grab and drop instruments or sounds to any location in the space. Imagine we are having a drama that we can dance and interact with different sounds on the stage and the audience can hear the actor is moving with sound, different areas of the audience will have different experiences
 
 **Key Evolution Points**:
 - **Week 3**: Pivoted from MiMu Gloves to VIVE Tracker for spatial tracking

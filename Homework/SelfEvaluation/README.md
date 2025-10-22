@@ -6,8 +6,11 @@ This folder contains materials for the MTEC-498 Self-Evaluation Presentation, re
 ## Contents
 - `README.md` - This documentation file
 - `MTEC-498-Capstone-Filled-by-Repo.pdf` - Self-evaluation presentation slides
+- `Comprehensive_Self_Evaluation.md` - Complete 8-minute presentation content
 - `SupportingMaterials/` - Supporting evidence and documentation
-- `Self_Evaluation_Presentation.md` - Comprehensive presentation content
+  - `Achievement_Analysis.md` - Detailed technical accomplishments
+  - `Code_Analysis.md` - Code analysis and technical evidence
+  - `Evidence_Documentation.md` - Supporting evidence for all claims
 
 ## Project Summary
 **PanGu — Spatial Audio, Live Phase Controller & Composition Assistant**

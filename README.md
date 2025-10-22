@@ -109,6 +109,7 @@ Musicians, producers, sound artists, and audiences exploring **new performance f
 ## Next Steps
 - **Repository**: *https://github.com/CharlieSL1/MTEC-498-Capstone.git*  
 - **GUI Project**: *https://github.com/CharlieSL1/PanGu-Gesture-and-ML-Based-Control-for-Human-Centered-3D-Audio.git*
+- **Self-Evaluation Presentation**: [Google Drive Link](https://drive.google.com/file/d/14qCRTzZLPewIWis8jbfDMorPC7xLenI-/view?usp=sharing)
 - **Collaboration**: Open to peer feedback & partnerships  
 - **Office Hours**: Mon 1–9 pm; Tue 1–4 pm; Fri 1–6 pm  
 - **Email**: cshi@berklee.edu

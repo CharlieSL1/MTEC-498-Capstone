@@ -54,6 +54,18 @@
 - **Creative Vision**: Clear connection to personal interests and career goals
 - **Future Planning**: Documented plans for continued development
 
+### 7. Ableton Live Integration - Max for Live Device
+**Evidence:**
+- **PanGu.amxd**: Custom Max for Live audio effect exported to `SupportingMaterials/` for grading
+- **Live UI Components**: Uses `live.numbox`, `live.grid`, and automation-ready parameters for gesture feedback
+- **Audio Engine Blocks**: Incorporates `mc.matrix~`, `mc.*~`, `record~`, and `groove~` objects for multi-channel routing and looping
+- **End-to-End Pipeline**: Receives OSC data from `dataToMax.py` and immediately modifies Ableton Live macros
+
+**Impact:**
+- Bridges depth-camera gestures directly into Ableton Live
+- Demonstrates professional DAW integration suitable for performances
+- Provides tangible evidence for the course self-evaluation deliverable
+
 ## Quantified Achievements
 
 ### Technical Metrics
@@ -61,11 +73,13 @@
 - **Real-time Processing**: Live camera feed with gesture recognition
 - **OSC Communication**: Real-time data transmission to Max/MSP
 - **Modular Components**: 3 main Python modules + Max/MSP integration
+- **Ableton Live Mapping**: Gesture IDs routed through `PanGu.amxd` to Live macros and multichannel routing
 
 ### Project Timeline Achievement
 - **Week 3**: System architecture design and technology evaluation
 - **Week 4**: Hardware research and system flow documentation
 - **Week 6**: Functional implementation with gesture recognition
+- **Week 10**: Ableton Live integration complete via `PanGu.amxd`
 - **Ongoing**: Continuous iteration and improvement
 
 ### Learning Progression
@@ -80,6 +94,7 @@
 2. **Real-time Processing**: Optimized gesture recognition for live performance
 3. **System Integration**: Connected Python computer vision with Max/MSP audio
 4. **Documentation**: Created comprehensive technical documentation
+5. **DAW Handoff**: Ensured OSC gestures map deterministically to Ableton Live macros without jitter
 
 ### Project Management Challenges
 1. **Scope Management**: Adjusted project scope based on technical feasibility
@@ -104,9 +119,9 @@
 ## Future Development Areas
 
 ### Short-term Goals
-- Complete Max/MSP integration and audio processing
-- Implement spatial audio algorithms
-- Create user interface for performance
+- Rehearse the full gesture-driven Ableton Live performance with depth camera tracking
+- Polish spatial audio algorithms and multichannel routing inside Max/MSP/Live
+- Create a performance-facing UI overlay for monitoring gestures and spatial placement
 - Test and refine gesture recognition accuracy
 
 ### Long-term Goals

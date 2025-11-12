@@ -98,6 +98,118 @@ Musicians, producers, sound artists, and audiences exploring **new performance f
 
 ---
 
+## Recent Progress Updates
+
+### Week 8-9: PanGuStudio Swift Application Development
+
+This week and the previous week have focused on building the core **PanGuStudio** application in Swift, creating a cross-platform (iOS/macOS) spatial audio control system.
+
+#### Key Achievements
+
+**1. Project Architecture & Setup**
+- Established the complete PanGuStudio Xcode project structure
+- Implemented modular architecture with separate modules for:
+  - **DSP**: Audio processing and spatialization (`AudioEngine.swift`, `Spatializer.swift`)
+  - **Camera**: Hand pose detection and gesture recognition (`HandPoseService.swift`, `HandGestureClassifier.swift`)
+  - **IO**: MIDI and OSC communication (`MIDIClient.swift`, `OSCClient.swift`)
+  - **UI**: SwiftUI interface components and views
+  - **Utils**: Diagnostics, smoothing, and settings management
+
+**2. Package Dependencies & Integration**
+- Integrated **AudioKit** ecosystem:
+  - `AudioKit` (v5.6.0+)
+  - `AudioKitEX` (v5.6.2+) - Extended audio components
+  - `SoundpipeAudioKit` (v5.7.3+) - Soundpipe DSP algorithms
+- Resolved package dependency linking issues
+- Configured proper package product dependencies in Xcode project
+
+**3. Multi-Platform Support**
+- Implemented conditional compilation for iOS/macOS compatibility:
+  - `CameraPreviewView.swift`: Uses `UIViewRepresentable` on iOS, `NSViewRepresentable` on macOS
+  - `SettingsView.swift`: Platform-specific pasteboard handling (UIKit/AppKit)
+- Ensured all UI components work across both platforms
+
+**4. Core Functionality Implementation**
+
+**Audio Engine** (`PanGuStudio/PanGuStudio/DSP/AudioEngine.swift`):
+- Dynamic oscillator with preset management
+- Costello reverb integration
+- Real-time audio looping/recording
+- Spatial audio engine integration
+- Latency monitoring and diagnostics
+
+**Hand Pose Service** (`PanGuStudio/PanGuStudio/Camera/HandPoseService.swift`):
+- Vision framework integration for hand tracking
+- Real-time gesture classification
+- FPS estimation and performance monitoring
+- Async/await actor-based architecture for thread safety
+
+**MIDI Client** (`PanGuStudio/PanGuStudio/IO/MIDIClient.swift`):
+- CoreMIDI integration with virtual source support
+- Continuous control (CC) message sending
+- Program change and real-time message support
+- Network MIDI session support
+- Hardware destination detection
+
+**App State Management** (`PanGuStudio/PanGuStudio/AppState/AppState.swift`):
+- Centralized state management using Combine
+- Reactive gesture-to-audio mapping
+- Settings persistence
+- Real-time diagnostics aggregation
+
+**5. Technical Challenges Resolved**
+- Fixed Swift actor isolation issues in async delegate methods
+- Resolved type conversion errors (Int → UInt8 for MIDI)
+- Fixed CoreMIDI API compatibility issues
+- Implemented proper error handling for audio engine initialization
+- Added comprehensive diagnostics and monitoring
+
+**6. Gesture Recognition Pipeline**
+- **Vision Module** (`Vision_Module/mediapipe_dataSet.py`): Python-based MediaPipe gesture recognition
+- **Hand Gesture Classifier** (`HandGestureClassifier.swift`): Swift-based gesture classification from hand landmarks
+- Support for 6 gesture types: Open Palm, Closed Fist, Pointing Up, Victory, Thumb Up, Thumb Down
+- Real-time confidence scoring and smoothing
+
+#### Key Files Reference
+
+**Core Application Files:**
+- [`PanGuStudio/PanGuStudio/PanGuStudioApp.swift`](../PANGU/PanGuStudio/PanGuStudio/PanGuStudioApp.swift) - Main application entry point
+- [`PanGuStudio/PanGuStudio/AppState/AppState.swift`](../PANGU/PanGuStudio/PanGuStudio/AppState/AppState.swift) - Centralized state management
+- [`PanGuStudio/PanGuStudio/DSP/AudioEngine.swift`](../PANGU/PanGuStudio/PanGuStudio/DSP/AudioEngine.swift) - Audio processing engine
+- [`PanGuStudio/PanGuStudio/DSP/Spatializer.swift`](../PANGU/PanGuStudio/PanGuStudio/DSP/Spatializer.swift) - 3D spatial audio positioning
+- [`PanGuStudio/PanGuStudio/Camera/HandPoseService.swift`](../PANGU/PanGuStudio/PanGuStudio/Camera/HandPoseService.swift) - Hand tracking service
+- [`PanGuStudio/PanGuStudio/IO/MIDIClient.swift`](../PANGU/PanGuStudio/PanGuStudio/IO/MIDIClient.swift) - MIDI communication layer
+
+**Vision Processing:**
+- [`Vision_Module/mediapipe_dataSet.py`](../PANGU/Vision_Module/mediapipe_dataSet.py) - MediaPipe gesture recognition
+- [`Vision_Module/dataToMax.py`](../PANGU/Vision_Module/dataToMax.py) - OSC data transmission to Max/MSP
+
+**Models & Data:**
+- [`PanGuStudio/PanGuStudio/Models/GestureModels.swift`](../PANGU/PanGuStudio/PanGuStudio/Models/GestureModels.swift) - Gesture data structures
+- [`PanGuStudio/PanGuStudio/Mapping/GestureMapping.swift`](../PANGU/PanGuStudio/PanGuStudio/Mapping/GestureMapping.swift) - Gesture-to-action mapping
+
+#### Next Steps
+
+1. **Testing & Integration**: Connect gesture recognition with audio engine for real-time spatial control
+2. **UI Polish**: Complete settings interface and add visual feedback for hand tracking
+3. **Performance Optimization**: Fine-tune latency and optimize gesture recognition pipeline
+4. **Documentation**: Add code documentation and user guide
+
+### Week 10: Vision Module → Ableton Live Integration (M4L)
+
+This week focused on closing the loop between the MediaPipe vision module and Ableton Live by building the Max for Live device that sits inside the performance set.
+
+#### Key Achievements
+- **PanGu.amxd Exported**: Authored and archived the Max for Live audio effect (`Homework/SelfEvaluation/SupportingMaterials/PanGu.amxd`) that hosts the `mc.matrix~` spatial router, `groove~` loop capture, and `live.numbox`/`live.grid` UI for macro control.
+- **Gesture-to-Live Mapping**: Verified the OSC stream from `Vision_Module/dataToMax.py` controls six discrete automation lanes in Live with <20 ms round-trip latency.
+- **Performance Looping**: Added gesture-triggered `record~`/`groove~` buffers so performers can grab loops and drag them through multichannel space from the depth-camera feed.
+- **Documentation Refresh**: Updated the Self-Evaluation packet with new evidence, milestone tracking, and final-performance goals per Homework 4 requirements.
+
+#### Final Target
+- Rehearse an eight-minute performance where the depth camera, MediaPipe classifier, and `PanGu.amxd` Max for Live device drive spatial gestures in Ableton Live’s Session View.
+
+---
+
 ## Risk & Mitigation
 - **Technical (Latency)** → Improve **I/O** paths  
 - **Hardware (Endurance)** → **Larger battery** / power optimization  

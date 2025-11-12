@@ -7,6 +7,7 @@
 - `/Project/Week6/Vision_Module/mediapipe_dataSet.py` - Complex MediaPipe integration
 - `/Project/Week6/Vision_Module/dataToMax.py` - OSC communication system
 - `/Project/Week6/main.py` - System integration layer
+- `SupportingMaterials/PanGu.amxd` - Max for Live spatial audio device receiving OSC gestures inside Ableton Live
 
 **Code Quality Metrics**:
 - **Total Lines of Code**: ~200+ lines across multiple modules
@@ -20,11 +21,13 @@
 - **Communication Module**: OSC data transmission
 - **Integration Layer**: Main system coordination
 - **Audio Module**: Max/MSP integration (in development)
+- **Ableton Live Module**: `PanGu.amxd` Max for Live device translating OSC gestures into DAW automation
 
 **Problem-Solving Examples**:
 - **Real-time Processing**: Optimized gesture recognition pipeline
 - **Data Flow**: Seamless camera → processing → communication → audio
 - **Modular Design**: Reusable components for different system functions
+- **Live Automation**: Debugged OSC-to-Max for Live parameter mapping to prevent feedback loops
 
 ### 3. Industry Practices Evidence
 **Version Control**:
@@ -32,6 +35,7 @@
 - **Commit History**: Regular commits with descriptive messages
 - **Branch Management**: Organized development workflow
 - **Documentation**: README files and project structure documentation
+- **Asset Archiving**: Exported the `PanGu.amxd` Max for Live device and stored it alongside documentation for assessment
 
 **Professional Documentation**:
 - **Project Proposal**: 8-page comprehensive proposal
@@ -76,12 +80,14 @@
 - **Real-time Processing**: Live camera feed with gesture recognition
 - **OSC Communication**: Real-time data transmission to Max/MSP
 - **Modular Components**: 3 main Python modules + integration layer
+- **Max for Live Device**: `PanGu.amxd` routes gestures to Ableton Live macros and multichannel panning
 
 ### Project Timeline Achievement
 - **Week 3**: System architecture design and technology evaluation ✅
 - **Week 4**: Hardware research and system flow documentation ✅
 - **Week 6**: Functional implementation with gesture recognition ✅
-- **Ongoing**: Max/MSP integration and spatial audio implementation 🔄
+- **Week 10**: Ableton Live integration via `PanGu.amxd` ✅
+- **Ongoing**: Performance rehearsal and spatial audio refinement 🔄
 
 ### Learning Progression
 - **Initial Skills**: Basic Python, Max/MSP knowledge
@@ -95,6 +101,7 @@
 2. **Real-time Processing**: Optimized gesture recognition for live performance
 3. **System Integration**: Connected Python computer vision with Max/MSP audio
 4. **Documentation**: Created comprehensive technical documentation
+5. **DAW Synchronization**: Ensured OSC gestures translated cleanly into Ableton Live automation via Max for Live
 
 ### Project Management Challenges
 1. **Scope Management**: Adjusted project scope based on technical feasibility
@@ -119,9 +126,9 @@
 ## Future Development Evidence
 
 ### Short-term Goals
-- Complete Max/MSP integration and audio processing
-- Implement spatial audio algorithms
-- Create user interface for performance
+- Rehearse the full gesture-driven Ableton Live performance with depth camera tracking
+- Implement and polish spatial audio algorithms across Max/MSP and Live
+- Create a performer-facing UI for monitoring gestures and speaker placement
 - Test and refine gesture recognition accuracy
 
 ### Long-term Goals

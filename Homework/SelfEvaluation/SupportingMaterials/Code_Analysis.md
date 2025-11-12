@@ -76,6 +76,13 @@ gesture_map = {
 - **Real-time Communication**: Live data transmission
 - **Integration**: Seamless connection between Python and Max/MSP
 
+### 4. Max for Live Spatial Controller (`PanGu.amxd`)
+- **Environment**: Max/MSP 9, exported as a Max for Live audio effect (included in `SupportingMaterials/`)
+- **Live UI Components**: Uses `live.numbox`, `live.grid`, and customization-ready Live parameters for DAW feedback
+- **Audio Graph**: `mc.matrix~`, `mc.*~`, `record~`, and `groove~ grab @loop 1` objects manage multichannel routing, gain staging, and looping
+- **Gesture Mapping**: Receives OSC gesture IDs, gates them through `sel` objects, and triggers Live automation/loop capture
+- **Performance Readiness**: Device sits on an Ableton audio track so gestures can spatialize audio clips in real time
+
 ## Quantified Technical Achievements
 
 ### Code Metrics
@@ -84,12 +91,14 @@ gesture_map = {
 - **Gesture Types**: 6 different gestures recognized
 - **OSC Messages**: Real-time communication system
 - **Camera Integration**: Live video processing
+- **Max for Live Device**: `PanGu.amxd` hosts the multichannel audio graph and Live UI mapping
 
 ### Technical Complexity Levels
 1. **Basic Python**: File I/O, basic functions
 2. **Intermediate Python**: Class usage, error handling
 3. **Advanced Python**: Async processing, callback functions
 4. **Expert Python**: Computer vision, real-time processing, network communication
+5. **Max for Live Development**: Ableton Live device scripting with multichannel DSP
 
 ### System Architecture
 - **Modular Design**: Clean separation of concerns
@@ -169,9 +178,11 @@ gesture_map = {
 - **Advanced Processing**: Machine learning improvements
 - **Hardware Integration**: Additional sensor integration
 - **Performance Optimization**: Enhanced real-time processing
+- **Max for Live Enhancements**: Add preset systems and spatial panner visualizations inside `PanGu.amxd`
 
 ### Professional Applications
 - **Portfolio Project**: Demonstrates technical and creative skills
 - **Career Preparation**: Relevant skills for music technology roles
 - **Research Opportunities**: Foundation for academic research
 - **Commercial Potential**: Viable for product development
+- **Live Performance**: Ready-to-demo Ableton Live set showcasing gesture-based spatial control

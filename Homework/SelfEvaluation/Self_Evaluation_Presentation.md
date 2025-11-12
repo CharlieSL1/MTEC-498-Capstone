@@ -6,12 +6,13 @@
 ## 1. Course Journey Overview (1 min)
 
 ### Project Introduction and Evolution
-**Initial Vision**: A next-generation spatial audio performance platform featuring a wearable, arm-mounted Circle MIDI controller for intuitive 3D sound positioning and performance.
+**Initial Vision**: A next-generation spatial audio performance platform featuring a wearable, arm-mounted Circle MIDI controller and depth-camera gestures for intuitive 3D sound positioning and performance.
 
 **Key Evolution Points**:
 - **Week 3**: Pivoted from MiMu Gloves to VIVE Tracker for spatial tracking
 - **Week 4**: Explored depth camera integration (Orbbec Femto Bolt, Luxonis OAK-D Pro)
 - **Week 6**: Implemented gesture recognition system using MediaPipe
+- **Week 10**: Linked the vision module to Ableton Live with the custom `PanGu.amxd` Max for Live device
 
 ### Initial Goals vs. Current State
 **Original Goals**:
@@ -19,7 +20,7 @@
 - Develop wearable MIDI controller for 3D sound positioning
 - Bridge gap between technical spatial audio and accessible performance
 
-**Current Achievement**: Functional gesture recognition system with OSC communication to Max/MSP, laying foundation for spatial audio control.
+**Current Achievement**: Functional gesture recognition system with OSC communication driving the `PanGu.amxd` Max for Live device for Ableton-ready spatial audio control.
 
 ### Key Decisions That Shaped Experience
 1. **Technology Pivot**: Switched from glove-based to camera-based gesture recognition
@@ -34,25 +35,29 @@
 **Programming Skills Mastered**:
 - **Python**: Advanced MediaPipe integration, OpenCV camera processing, OSC communication
 - **Max/MSP**: Audio processing integration and real-time data handling
+- **Max for Live**: Authored the `PanGu.amxd` device that maps OSC gestures to Ableton Live macros
 - **System Architecture**: Modular design with clean separation of concerns
 
 **Concrete, Measurable Outcomes**:
-- **200+ lines of Python code** across 3 main modules
+- **99 lines of Python code** across 3 main modules
 - **6 gesture types** successfully recognized: Open_Palm, Closed_Fist, Pointing_Up, Victory, Thumb_Up, Thumb_Down
 - **Real-time processing** with live camera feed and gesture recognition
 - **OSC communication** system for seamless Python-to-Max/MSP data transmission
+- **PanGu.amxd** Max for Live audio effect exported with `mc.matrix~` routing, `live.numbox`/`live.grid` UI, and gesture-triggered `groove~` control
 
 **Technical Challenges Overcome**:
 - Gesture recognition accuracy optimization
 - Real-time camera feed processing
 - OSC message mapping and communication
 - System integration between Python and Max/MSP
+- Synchronizing OSC events with Ableton Live via Max for Live
 
 **Project Milestones Against Timeline**:
 - ✅ **Week 3**: System architecture design and technology evaluation
 - ✅ **Week 4**: Hardware research and system flow documentation  
 - ✅ **Week 6**: Functional implementation with gesture recognition
-- 🔄 **Ongoing**: Max/MSP integration and spatial audio implementation
+- ✅ **Week 10**: Ableton Live integration through the `PanGu.amxd` device
+- 🔄 **Ongoing**: Performance rehearsal and spatial audio refinement
 
 ### Portfolio Development Contribution
 - **Professional Documentation**: Comprehensive technical documentation suitable for portfolio
@@ -69,6 +74,7 @@
 - OSC communication system for live data transmission
 - Modular architecture with clean code organization
 - **Specific Example**: `mediapipe_dataSet.py` demonstrates advanced computer vision programming
+- Max for Live development of `PanGu.amxd` translates OSC gestures into Ableton controls
 
 ### Computational Thinking: Complex Problem-Solving
 **Evidence**:
@@ -76,6 +82,7 @@
 - **Real-time Constraints**: Solved latency issues in gesture recognition pipeline
 - **Integration Challenges**: Connected Python computer vision with Max/MSP audio
 - **Specific Example**: Created seamless data flow from camera input to audio output
+- **Live Automation Mapping**: Built deterministic gesture-to-macro routing to avoid conflicts in Ableton Live
 
 ### Industry Practices: Version Control, Documentation, Professional Methods
 **Evidence**:
@@ -83,6 +90,7 @@
 - **Documentation**: Detailed README files, progress reports, and technical documentation
 - **Project Management**: Weekly progress tracking and milestone documentation
 - **Code Organization**: Professional file structure with proper separation of concerns
+- **Deliverable Packaging**: Exported and archived the `PanGu.amxd` Max for Live device for assessment
 
 ### Communication Skills: Technical Presentation and Documentation Growth
 **Evidence**:
@@ -116,6 +124,7 @@
 2. **Real-time Processing Optimization**: Balancing gesture recognition accuracy with performance
 3. **System Integration**: Connecting Python computer vision with Max/MSP audio processing
 4. **Documentation Management**: Creating comprehensive technical documentation
+5. **Ableton Live Handshake**: Mapping OSC events to Max for Live without MIDI feedback loops
 
 **Project Management Challenges**:
 1. **Scope Management**: Adjusting project scope based on technical feasibility
@@ -128,6 +137,7 @@
 - **Modular Design**: Breaking complex system into manageable components
 - **Iterative Development**: Continuous testing and refinement of components
 - **Documentation-First**: Maintaining detailed records of decisions and progress
+- **Pipeline Instrumentation**: Logged OSC payloads and Ableton parameter changes to sync gestures with automation
 
 ### Learning from Setbacks and Mistakes
 - **Technology Pivots**: Learned to adapt quickly when initial approaches proved unfeasible
@@ -172,6 +182,7 @@
 - **Technical Writing**: Improved ability to document complex systems
 - **Problem-Solving**: Developed systematic approach to technical challenges
 - **Communication**: Enhanced ability to explain technical concepts
+- **Live Systems Integration**: Coordinated the Python → Max/MSP → Ableton Live signal chain for rehearsable sets
 
 ### Integration Across Creative Coding Minor Courses
 - **Programming Skills**: Applied advanced Python concepts from previous courses
@@ -183,16 +194,17 @@
 - **System Integration**: Valuable for any multi-platform development
 - **Real-time Processing**: Relevant for interactive media and performance
 - **Professional Documentation**: Essential for any technical career
+- **DAW Automation**: Max for Live development experience translates to commercial music tech workflows
 
 ---
 
 ## 6. Future Planning and Goal Setting (1 min)
 
 ### Short-term Development Areas for Continued Growth
-- **Complete Max/MSP Integration**: Finish spatial audio processing implementation
+- **Full Performance Prep**: Rehearse the 8-minute gesture-controlled Ableton Live set with depth camera tracking
+- **Spatial Routing Polish**: Refine Max/MSP and Live macros for multichannel placement
 - **Gesture Recognition Refinement**: Improve accuracy and add more gesture types
-- **User Interface Development**: Create performance interface for live use
-- **Testing and Optimization**: Comprehensive testing of complete system
+- **User Interface Development**: Create performance interface for live use with clear feedback
 
 ### Career Alignment and Professional Opportunities
 - **Music Technology Industry**: Direct relevance to spatial audio and performance technology
@@ -213,6 +225,7 @@
 - **Performance Videos**: Document live demonstrations of the system
 
 ### Continued Project Development Possibilities
+- **Final Target Performance**: Deliver a full gesture + depth camera-driven spatial performance this semester
 - **Version 2.0**: Standalone instrument without computer dependency
 - **Commercial Development**: Explore potential for product development
 - **Research Opportunities**: Connect to academic research in spatial audio

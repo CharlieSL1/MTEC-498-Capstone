@@ -7,26 +7,40 @@ This document outlines the organized structure of the MTEC-498-Capstone project.
 ```
 MTEC-498-Capstone/
 ├── README.md                    # Main project documentation
-├── PROJECT_STRUCTURE.md         # This file - project organization guide
+├── Documentation/               # Docs and structure guide
+│   └── PROJECT_STRUCTURE.md     # This file - project organization guide
 ├── .gitignore                   # Git ignore rules for sensitive files
 ├── assets/                      # Centralized asset storage
-│   ├── images/                  # All project images and diagrams
-│   │   ├── SystemFlow.png       # Week 4 system flow diagram
-│   │   └── V2.png              # Week 3 V2 concept diagram
-│   └── documents/              # Project documents and keys
-│       ├── PANGUV2.pdf         # Version 2 project document
-│       └── PANGU.key           # Project key file (gitignored)
-├── Homework/                   # Course homework and assignments
-│   └── ProjectProposal/        # Initial project proposal materials
-│       ├── PanGu_V1.jpg        # Version 1 concept image
-│       ├── PanGu.pdf           # Project proposal PDF
-│       ├── PanGu.png           # Project flow chart
-│       └── README.md           # Proposal documentation
-├── Week3/                      # Week 3 progress and documentation
-│   ├── README.md               # Week 3 progress report
-│   └── README.ipynb           # Jupyter notebook for Week 3
-└── Week4/                      # Week 4 progress and documentation
-    └── README.md               # Week 4 progress report
+│   ├── images/                  # Project images and diagrams
+│   │   ├── SystemFlow.png       # System flow diagram
+│   │   └── V2.png               # V2 concept diagram
+│   └── documents/               # Project documents and keys
+│       └── PANGUV2.pdf          # Version 2 project document
+├── Homework/                    # Course homework and assignments
+│   ├── PeerReview/              # Peer review materials
+│   ├── ProgressReport/          # Progress report materials
+│   ├── ProjectProposal/         # Initial project proposal materials
+│   │   ├── PanGu_V1.jpg         # Version 1 concept image
+│   │   ├── PanGu.pdf            # Project proposal PDF
+│   │   ├── PanGu.png            # Project flow chart
+│   │   └── README.md            # Proposal documentation
+│   └── SelfEvaluation/          # Self evaluation materials
+├── Project/                     # Weekly progress snapshots
+│   ├── Week3/                   # Week 3 progress and documentation
+│   │   ├── README.md            # Week 3 progress report
+│   │   └── README.ipynb         # Jupyter notebook for Week 3
+│   ├── Week4/                   # Week 4 progress and documentation
+│   │   └── README.md            # Week 4 progress report
+│   ├── Week6/                   # Week 6 code drop (vision + Max patch)
+│   │   ├── Max_Module/          # Max patch used that week
+│   │   ├── Vision_Module/       # Gesture pipeline and OSC sender
+│   │   ├── README.md            # Week 6 notes
+│   │   └── main.py              # Week 6 entry script
+│   └── Week11/                  # Week 11 updated depth + Max for Live snapshot
+│       ├── Max_Audio_Effect/    # Ableton/Max for Live device
+│       ├── Vision_Module/       # DepthAI + gesture modules
+│       ├── README.md            # Week 11 progress notes
+│       └── main.py              # Week 11 entry script
 ```
 
 ## File Organization Principles
@@ -62,4 +76,3 @@ Each week's directory contains:
 - Keep the root directory clean by moving new assets to appropriate subdirectories
 - Update this structure document when adding new directories or reorganizing
 - Ensure all README files reference assets using correct relative paths
-
